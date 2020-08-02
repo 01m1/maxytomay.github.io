@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body { 
-    background: $primary-color;
+    background: $primary-colour;
     color: white;
     height: 100%;
     margin: 0;
@@ -42,7 +42,7 @@ header {
 }
 
 .text-secondary {
-    color: $secondary-color;
+    color: $secondary-colour;
 }
 
 main {
@@ -54,7 +54,7 @@ main {
 
 
         &:hover {
-            color: $secondary-color;
+            color: $secondary-colour;
             @include easeOut()
         }
     }
@@ -65,5 +65,9 @@ main {
             margin-top: 20vh;
         }
     }
+}
+
+span {
+    color: $secondary-colour;
 }
     
