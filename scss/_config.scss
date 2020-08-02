@@ -1,0 +1,9 @@
+$primary-color: #28292b;
+$secondary-color: #0f9bff;
+$show-home-image: true;
+$home-image: url();
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;1,100&display=swap');
+
+@mixin easeOut {
+    transition: all 0.5s ease-out;
+}
