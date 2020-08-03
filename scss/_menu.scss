@@ -76,18 +76,18 @@
         }
     }
 
-    // // Branding Side 
-    // &-branding {
-    //     background: $primary-colour;
-    //     transform: translate3d(0,-100%,0);
-    //     @include easeOut;
+    // Branding Side 
+    &-branding {
+        background: black;
+        transform: translate3d(0,-100%,0);
+        @include easeOut;
 
-    //     &.show {
-    //         // Slide in from top
-    //         transform: translate3d(0, 0, 0);
-    //     }
+        &.show {
+            // Slide in from top
+            transform: translate3d(0, 0, 0);
+        }
 
-    // }
+    }
     .nav-item {
         transform: translate3d(600px, 0, 0);
         @include easeOut;

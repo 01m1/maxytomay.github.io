@@ -1,6 +1,7 @@
 @import 'config';
 @import 'menu';
 
+
 * {
     box-sizing: border-box;
 }
@@ -28,6 +29,8 @@ h1, h2, h3 {
         padding: 0.2rem 1rem;
         background-color: lighten($color: #000000, $amount: 0);
     }
+
+
 }
 
 a {
@@ -71,3 +74,67 @@ span {
     color: $secondary-colour;
 }
     
+.bio-image {
+    border-radius: 10px;
+    width: 350px;
+    height: 350px;
+    margin-right: 5000px;
+    box-shadow: 0 15px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.about-info {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-areas: 
+    'bioimage bio bio'
+    
+    'job1 job2 job3';
+    grid-template-columns: repeat(3, 1fr);
+    .bio-image {
+        grid-area: bioimage;
+        margin: auto;
+    }
+    
+    .bio {
+        grid-area: bio;
+        background: black;
+        font-size: 1.5rem;
+        padding: 0.5rem;
+    }
+    
+    .job-1 {
+        grid-area: job1;
+    }
+    
+    .job-2 {
+        grid-area: job2;
+    }
+    
+    .job-3 {
+        grid-area: job3;
+    }
+    
+    .job {
+        background: black;
+        padding: 0.5rem;
+    }
+}
+
+.projects {
+    color: gray;
+}
+
+
+.spoiler{ 
+    color: black; 
+    background-color:black;
+}
+  
+.spoiler:hover{
+    color: white;
+}
+
+.work {
+    color: white;
+}
+@import 'mobile';
