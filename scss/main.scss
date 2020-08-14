@@ -5,6 +5,16 @@
 * {
     box-sizing: border-box;
 }
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-thumb {
+    width: 2px;
+    background: $secondary-colour;
+}
+
 body { 
     background: $primary-colour;
     color: white;
@@ -21,7 +31,39 @@ h1, h2, h3 {
     font-weight: 400;
 
     &.lg-heading {
-        font-size: 6rem;
+        color: white; 
+        font-family: 'Roboto Mono', monospace;
+        font-size: 70px;
+        margin: 10px 0 1px;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 30em;
+        animation: type 4s steps(60, end); 
+    }
+
+    &.lg-heading:nth-child(2){
+        animation: type2 8s steps(60, end);
+    }
+    &.lg-heading a{
+        color: white;
+        text-decoration: none;
+    }
+    .typin {
+        color: white;
+        animation: blink 1s infinite;
+    }
+    @keyframes type { 
+        from { width: 0; } 
+    } 
+      
+    @keyframes type2 {
+        0%{width: 0;}
+        50%{width: 0;}
+        100%{ width: 100; } 
+    } 
+      
+    @keyframes blink{
+        to{opacity: .0;}
     }
 
     &.sm-heading {
