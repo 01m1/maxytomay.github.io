@@ -229,9 +229,9 @@ span {
     text-align: center; }
     main .lg-heading {
       line-height: 1;
-      width: 4em;
+      width: 3em;
       margin-bottom: 1rem;
-      font-size: 60px;
+      font-size: 40px;
       text-align: center;
       animation: type 1s steps(60, end); }
   ul.menu-nav, div.menu-branding {
@@ -250,8 +250,11 @@ span {
     transform: translate3d(100%);
     background-color: black; }
   .about-info {
-    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
-    grid-template-columns: 1fr; } }
+    grid-template-areas: 'lg-heading' 'sm-heading' 'bioimage' 'bio' 'job1' 'job2' 'job3';
+    grid-template-columns: 1fr; }
+  .bio-image {
+    width: 300px;
+    height: 300px; } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
